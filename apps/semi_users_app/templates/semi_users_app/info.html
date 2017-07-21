@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>User {{ the_user.id }}</h1>
+        <p>Full Name: {{ the_user.first_name }} {{ the_user.last_name }}
+        <p>Email: {{ the_user.email }}</p>
+        <p>Created at: {{ the_user.created_at }}</p>
+        <p><a href="http://localhost:8000/users/{{ the_user.id }}/edit">Edit</a> | <a href="http://localhost:8000/users/{{ the_user.id }}/destroy">Delete</a> | <a href="http://localhost:8000/users">Go Back</a></p>   
+    </body>
+</html>
